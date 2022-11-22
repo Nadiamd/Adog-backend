@@ -22,7 +22,6 @@ router.get("/sync/:idRoom", (req, res) => {
       },
     })
     .then((dataRoom) => {
-      console.log(dataRoom);
       res.json(dataRoom); // infos de la room : id des 2 users, date, message etc.
     });
 });
